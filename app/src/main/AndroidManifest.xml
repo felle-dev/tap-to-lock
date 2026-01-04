@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.software.device_admin"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:excludeFromRecents="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:launchMode="singleTop"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TapToLock">
+
+        <activity android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.ASSIST" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!--
+            BIND_DEVICE_ADMIN is a permission that a DeviceAdminReceiver subclass must have, to
+            ensure that only the system can interact with the receiver (no application can be
+            granted this permission). This prevents other applications from abusing your device
+            admin app.
+        -->
+        <receiver
+            android:name=".MainReceiver"
+            android:exported="true"
+            android:label="@string/receiver_name"
+            android:description="@string/receiver_desc"
+            android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/force_lock_policy" />
+            <intent-filter>
+                <!--
+                    This is the primary action that a DeviceAdminReceiver subclass must handle to be
+                    allowed to manage a device. This is set to the receiver when the user enables
+                    the device admin app. Your code typically handles this in onEnabled(). To be
+                    supported, the receiver must also require the BIND_DEVICE_ADMIN permission so
+                    that other applications cannot abuse it.
+                -->
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+        <service
+            android:name=".LockAccessibilityService"
+            android:exported="true"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/lock_accessibility_service_config" />
+        </service>
+    </application>
+</manifest>
