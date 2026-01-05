@@ -17,6 +17,8 @@
         android:theme="@style/Theme.TapToLock">
 
         <activity android:name=".MainActivity"
+            android:excludeFromRecents="true"
+            android:noHistory="true"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
