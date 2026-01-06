@@ -8,4 +8,6 @@
     <!-- Ask user to enable app as Accessibility Service-->
     <string name="enable_accessibility_service">Please enable Lock as an accessibility service in the following screen</string>
     <string name="accessibility_service_desc">Lock the screen</string>
+    <string name="tile_label">Lock Screen</string>
+    <string name="widget_description">Tap to lock screen</string>
 </resources>
