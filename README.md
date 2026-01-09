@@ -1,10 +1,10 @@
-[![Latest release](https://img.shields.io/github/v/release/realfelle/tap-to-lock?style=for-the-badge)](https://github.com/realfelle/tap-to-lock/releases)
+[![Latest release](https://img.shields.io/github/v/release/felle-dev/tap-to-lock?style=for-the-badge)](https://github.com/felle-dev/tap-to-lock/releases)
 [![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://developer.android.com)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue?style=for-the-badge)](LICENSE)
 
-**[Tap to Lock](https://github.com/realfelle/tap-to-lock)** is a simple, lightweight Android app that lets you lock your screen with just a single tap. No frills, no delays—just instant security.
+**[Tap to Lock](https://github.com/felle-dev/tap-to-lock)** is a simple, lightweight Android app that lets you lock your screen with just a single tap. No frills, no delays—just instant security.
 
-[![Get it on GitHub](https://img.shields.io/badge/Get%20it%20on-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/realfelle/tap-to-lock/releases)
+[![Get it on GitHub](https://img.shields.io/badge/Get%20it%20on-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/felle-dev/tap-to-lock/releases)
 
 ## **Features**
 
@@ -28,8 +28,8 @@
 ### **Installation**
 1. Clone the repository:
    ```bash
-   git clone https://github.com/realfelle/top-to-lock.git
-   cd top-to-lock
+   git clone https://github.com/felle-dev/tap-to-lock.git
+   cd tap-to-lock
    ```
 2. Open the project in **Android Studio**.
 3. Build and run the app.
