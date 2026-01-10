@@ -10,7 +10,6 @@
 
 - **One-Tap Lock** – Lock your screen instantly with a single tap
 - **Lightweight & Fast** – Minimal resource usage for maximum efficiency
-- **No Permissions Required** – Works without unnecessary access to your data
 
 ## **Tech Stack**
 
