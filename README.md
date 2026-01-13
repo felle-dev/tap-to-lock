@@ -40,7 +40,7 @@ Contributions are always welcome! Feel free to:
 - Submit pull requests with improvements
 
 ## **License**
-This project is licensed under the **Apache 2.0 License** – see the [LICENSE](LICENSE) and [NOTICE](NOTICE) files for details.
+This project is licensed under the **GNU General Public License v3.0** - see the [LICENSE](LICENSE) file for details.
 
 [release-badge]: https://img.shields.io/github/v/release/felle-dev/tap-to-lock?style=for-the-badge
 [flutter-badge]: https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white
