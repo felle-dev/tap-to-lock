@@ -2,11 +2,11 @@
     <string name="app_name">Tap to Lock</string>
     <string name="receiver_name">Tap to Lock - screen locker</string>
     <!-- Message displayed to the user by system during authorization-->
-    <string name="receiver_expl">Allow "Lock" to turn the screen off?</string>
+    <string name="receiver_expl">Allow "Tap to Lock" to turn the screen off?</string>
     <!-- Small description inside Device Administrator Setting -->
     <string name="receiver_desc">Allows to lock the screen</string>
     <!-- Ask user to enable app as Accessibility Service-->
-    <string name="enable_accessibility_service">Please enable Lock as an accessibility service in the following screen</string>
+    <string name="enable_accessibility_service">Please enable Tap to Lock as an accessibility service in the following screen</string>
     <string name="accessibility_service_desc">Lock the screen</string>
     <string name="tile_label">Lock Screen</string>
     <string name="widget_description">Invisible widget to lock your screen</string>
