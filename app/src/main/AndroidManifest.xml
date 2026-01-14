@@ -70,13 +70,16 @@
         <!-- Quick Settings Tile -->
         <service
             android:name=".LockTileService"
-            android:exported="true"
-            android:icon="@mipmap/ic_launcher"
             android:label="@string/tile_label"
+            android:icon="@drawable/ic_lock_tile"
+            android:exported="true"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
             </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.tile"
+                android:resource="@xml/lock_tile" />
         </service>
 
         <!-- Widget -->

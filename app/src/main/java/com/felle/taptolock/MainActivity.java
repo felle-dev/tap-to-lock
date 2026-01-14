@@ -16,6 +16,8 @@ import android.provider.Settings;
 import android.util.Log;
 import android.view.accessibility.AccessibilityManager;
 
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
+
 public class MainActivity extends Activity {
 
     private static final String TAG = "MainActivity";
@@ -102,7 +104,8 @@ public class MainActivity extends Activity {
     }
 
     private void enableAppAsAccessibilityService() {
-        new AlertDialog.Builder(this)
+        new MaterialAlertDialogBuilder(this)
+                .setTitle(R.string.receiver_desc)
                 .setMessage(R.string.enable_accessibility_service)
                 .setPositiveButton(android.R.string.ok, (dialog, which) -> {
                     Intent intent = new Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS);
@@ -114,6 +117,7 @@ public class MainActivity extends Activity {
                 })
                 .show();
     }
+
 
     private String getResultString(final int resultCode) {
         switch (resultCode) {
